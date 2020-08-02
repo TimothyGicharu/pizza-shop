@@ -3,7 +3,7 @@
 A website I created for my pizza place, Downtown Pizza. I saw it as a good way of widening my customer base. It is a web application that enables customers to order different sizes of pizza with one or more toppings. 
 
 <!--- Image --->
-![Landing Page]()
+![Landing Page](./images/landing.png)
 
 ## Technologies Used
 - JavaScript / jQuery
