@@ -1,0 +1,188 @@
+.navbar{
+    background-color: black;
+}
+
+.landing{
+    background-image: url(../images/fire_oven.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top:18%;
+    padding-bottom: 18%; 
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.about-us{
+    background-image: url(../images/hardwood.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    
+}
+
+.menu-header{
+    text-align: center;
+}
+
+#menu{
+    text-align: center;
+}
+
+#portfolio-items{
+    justify-content: space-between;
+}
+
+.form-group h2{
+    text-align: center;
+}
+
+.row .column{
+    justify-content: space-between;
+}
+
+.form-group{
+    background-image: url(../images/c_image.jpg);
+    opacity: 0.8;
+}
+
+footer .card-footer{
+    text-align: center;
+    margin-left: 40px;
+}
+
+footer .footer-info{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.container h2{
+    text-align: center;
+}
+
+input.transparent-input{
+    background-color:transparent !important;
+    color: white;
+ }
+
+textarea.transparent-input{
+    background-color:transparent !important;
+    color: white;
+ }
+
+#contact-form.form-control::-webkit-input-placeholder {
+    color: white;
+  }
+
+.media {
+    background: none repeat scroll 0 0 #fff;
+    border-bottom: 1px solid #c7c9c8;
+    margin-bottom: 30px;
+}
+
+.media a {
+    overflow: hidden;
+}
+
+.media-img {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+.media-img .img-overlay {
+    background: none repeat scroll 0 0 rgba(248, 246, 246, 0.4);
+    color: black;
+    height: 100%;
+    opacity: 0;
+    padding-top: 30%;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.1s ease-out 0.1s;
+    visibility: hidden;
+    width: 100%;
+    z-index: 4;
+}
+
+.media:hover .img-overlay a, .media .img-overlay:hover a {
+    display: inline-block;
+}
+
+.media:hover .img-overlay, .media .media-img:hover .img-overlay {
+    opacity: 1;
+    transition: opacity 0.3s ease-out 0s;
+    visibility: visible;
+}
+
+.media div.media-img img {
+    transform: scale(1, 1);
+    transition-duration: 2000ms;
+    transition-timing-function: ease-out;
+    width: 100%;
+}
+
+#order-title{
+    text-align: center;
+}
+
+.order-section{
+    background-image: url(../images/flames.jpg);
+    color: white;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.checkout{
+    align-items: center;
+}
+
+#contact-form{
+    background-image: url(../images/pizza-name.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.check-out-button{
+    align-self: center;
+    border-radius: 3em;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    position: relative;
+    margin: 5%;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+.check-out-button:hover {
+    background-color: #3e8e41;
+    color: white;
+  }
+
+#this-button{
+    border-radius: 3em;
+}
+
+
+#this-button:hover {
+    background-color: #3e8e41;
+    color: white;
+}
