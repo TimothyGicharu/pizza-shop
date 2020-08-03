@@ -18,16 +18,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#" tabindex="-1">About Us</a>
+                <a class="nav-link" href="#about" tabindex="-1">About Us</a>
               </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" tabindex="-1">Menu</a>
+              <a class="nav-link" href="#menu" tabindex="-1">Menu</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" tabindex="-1">Order</a>
+              <a class="nav-link" href="#order" tabindex="-1">Order</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+              <a class="nav-link active" href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -46,7 +46,7 @@
         </div>
         <br>
         <br>
-        <div class="about-us">
+        <div class="about-us" id="about">
             <h1>About Us</h1>
             <h4>Bringing Italy to the streets of Nairobi</h4>
             <p>In 2020, the very first Pizzeria opened up amongst the growing fast food restaurants and eateries in downtown Nairobi,  </p>
@@ -54,7 +54,7 @@
             <p> authentic Neapolitan pizza in the bigger part of the city, we would like to extend a warm invite for you to join us in our Downtown pizzeria.</p>
         </div>
 
-        <div class="album py-5 bg-light">
+        <div class="album py-5 bg-light" id="menu">
             <div class="container">
             <div class="menu-header">
                 <h1>Menu</h1>
@@ -121,7 +121,7 @@
 
               <br>
 
-              <div class="container order-section">
+              <div class="container order-section" id="order">
 
                 <div class="order">
                     <div id="order-title">
@@ -133,7 +133,7 @@
                 
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">Pizza</label>
-                  <select class="form-control" id="type">
+                  <select class="form-control" id="pizzaType">
                     <option>Cheese Pizza</option>
                     <option>Pepperoni</option>
                     <option>Hawaaian</option>
@@ -145,7 +145,7 @@
   
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">Size</label>
-                  <select class="form-control" id="size">
+                  <select class="form-control" id="pizzaSize">
                     <option>Small</option>
                     <option>Medium</option>
                     <option>Large</option>
@@ -154,36 +154,62 @@
   
                 <div class="form-group">
                   <label for="exampleFormControlSelect1">Select your crust preference</label>
-                  <select class="form-control" id="crust">
-                    <option>Custom crust</option>
-                    <option>Thin Crust</option>
-                    <option>Thick Crust</option>
+                  <select class="form-control" id="pizzaCrust">
+                    <option value="crispy">Crispy crust</option>
+                    <option value="stuffed">Stuffed Crust</option>
+                    <option value="gluten_free">Gluten-free Crust</option>
                   </select>
                 </div>
   
                 <div class="form-group">
-                  <label for="exampleFormControlSelect1">Select your favorite toppings</label>
-                  <select class="form-control" id="toppings">
-                    <option>Olives</option>
-                    <option>Tomatoes</option>
-                    <option>Mushrooms</option>
-                    <option>Pepper</option>
-                  </select>
+                  <label>Select your favorite toppings</label>
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="olives">
+                    <label class="custom-control-label" for="olives">Olives</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="tomatoes">
+                    <label class="custom-control-label" for="tomatoes">Tomatoes</label>
+                  </div>
+
+                    <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="mushrooms">
+                    <label class="custom-control-label" for="mushrooms">Mushrooms</label>
+                  </div>
+
+                    <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="pepper">
+                    <label class="custom-control-label" for="pepper">Pepper</label>
+                  </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Quantity</label>
-                  <select class="form-control" id="quantity">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
+              <div class="form-control">
+                <label>Select your delivery option</label>
+
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="delivery">
+                  <label class="custom-control-label" for="delivery">Delivery</label>
                 </div>
+
+                  <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="pickup">
+                  <label class="custom-control-label" for="pickup">Pick-Up</label>
+                </div>
+              </div>
+                <br>
+                <br>
+                <br>
 
                 <div class="checkout">
-                    <button type="button" class="btn btn-success check-out-button">Check-out</button>
+                    <button type="button" class="btn btn-success check-out-button" id="addToOrder">Add to Order</button>
+                </div>
+                
+                <div class="checkout">
+                  <button type="button" class="btn btn-primary" id="clickTheNumber">
+                    Checkout <span class="badge badge-light" id="pizzaCount">0</span>
+                  </button>
                 </div>
 
               </div>
@@ -195,7 +221,7 @@
 
               </div>
 
-              <div class="container form-group">
+              <div class="container form-group" id="contact">
                 <form id="contact-form">
                     <h2>CONTACT US</h2>
                     <div class="row">
