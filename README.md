@@ -21,9 +21,7 @@ Search engine, preferrably Google Chrome
 ##### Setup Instructions and Installation
 
 - Clone this repository to a location in your file system:
-
-<!-- Change this info -->
-https://github.com/TimothyGicharu/akan-name-generator.git
+   https://github.com/TimothyGicharu/pizza-shop.git
 - Open terminal command line then navigate to the root folder of the application. 
 - Open `index.html` on your Browser.
 
